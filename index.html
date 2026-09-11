@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>噜噜小游戏</title>
-<meta name="description" content="选择噜噜翻翻乐或噜噜2048，开始一场轻松的小游戏。">
+<meta name="description" content="选择噜噜翻翻乐、2048或连连看，开始一场轻松的小游戏。">
 <style>
 *{box-sizing:border-box}html{color-scheme:light}body{margin:0;background:#fffaf4;color:#533e2e;font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif}main{width:min(100% - 40px,460px);margin:clamp(50px,14vh,130px) auto 36px}header{margin-bottom:30px}h1{margin:0;font-size:32px;letter-spacing:-1px;font-weight:800}h1 span{color:#bc6029}header p{margin:8px 0 0;color:#94765f;font-size:15px}.games{display:grid;gap:16px}.game{display:flex;align-items:center;gap:18px;min-height:128px;padding:22px;color:inherit;text-decoration:none;border:1px solid #e8d7c3;border-radius:18px;background:#fffdf9;box-shadow:0 3px 0 #eddfcf;transition:transform .18s,box-shadow .18s,border-color .18s}.game:hover{transform:translateY(-3px);border-color:#d2ad81;box-shadow:0 6px 0 #eddfcf}.game:active{transform:translateY(0)}.game:focus-visible{outline:3px solid #537f9b;outline-offset:5px}.icon{width:66px;height:66px;flex-shrink:0;border-radius:16px;display:grid;place-items:center;background:#f9e4c8;color:#a85a25}.memory .icon{background:#e5eddf;color:#5d7950}.icon svg{width:42px;height:42px}.tile{font-size:24px;font-weight:850;letter-spacing:-1px}.text{flex:1;min-width:0}h2{font-size:20px;margin:0 0 4px}.text p{font-size:14px;color:#91745e;margin:0}.arrow{font-size:23px;color:#a48970}footer{text-align:center;margin-top:32px;font-size:13px;color:#a38b76}@media(max-width:370px){main{width:calc(100% - 28px)}.game{padding:18px 15px;gap:13px}.icon{width:55px;height:55px}h2{font-size:18px}.text p{font-size:13px}}@media(prefers-reduced-motion:reduce){.game{transition:none}}
+.link-game .icon{background:#e0eaf1;color:#557c94}
 </style>
 </head>
 <body>
@@ -20,6 +21,10 @@
 <a class="game" href="./2048.html">
 <span class="icon tile" aria-hidden="true">2048</span>
 <div class="text"><h2>噜噜 2048</h2><p>滑动合成，让快乐加倍。</p></div><span class="arrow" aria-hidden="true">→</span>
+</a>
+<a class="game link-game" href="./link.html">
+<span class="icon" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><rect x="3" y="7" width="14" height="17" rx="4" stroke="currentColor" stroke-width="2"/><rect x="31" y="7" width="14" height="17" rx="4" stroke="currentColor" stroke-width="2"/><path d="M10 25v13h28V25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+<div class="text"><h2>噜噜连连看</h2><p>连起相同的噜噜，一关接一关。</p></div><span class="arrow" aria-hidden="true">→</span>
 </a>
 </nav>
 <footer>休息一下，和噜噜玩一会儿。<br>其他噜噜小游戏尽请期待</footer>
